@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-// import './App.css'
+import './App.css'
 import { Button } from './components/ui/button'
 import { TypographyDemo } from './components/ui/typography'
 import SidebarMenu from './components/ui/sidebar'
@@ -12,13 +12,19 @@ import Profile from './pages/profile'
 import Login from './pages/login'
 import Results from './pages/results'
 import CastVote from './pages/cast_vote'
+import { HelpCircleIcon } from 'lucide-react'
+import { ThemeProvider } from './components/ui/theme-provider'
+import { Header } from './components/ui/Header'
+
+
 
 function App() {
 
   return (
-    
+    <>
+    <Header/>
     <Router>
-    <div className="flex bg-black-">
+    <div className="flex bg-black">
       <SidebarMenu />
       <div className="flex-1 p-4">
         <Routes>
@@ -33,7 +39,10 @@ function App() {
     </div>
   </Router>
 
-   
+    
+
+
+   </>
     
   )
 }

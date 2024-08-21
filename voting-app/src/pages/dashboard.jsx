@@ -1,10 +1,21 @@
+import { Calendar } from '@/components/ui/calendar';
 import React from 'react';
 
 const Dashboard = () => {
   return (
-    <div className="p-4 text-lg font-bold">
-    <span>Hi, Welcome back 👋</span>
-  </div>
+    <>
+    
+    <div className="Dashboard">
+      
+      <h1>Hi, Welcome back 👋</h1>
+      <div >
+      <Calendar/>
+      </div>
+    </div>
+    
+   
+    </>
+    
   );
 };
 
